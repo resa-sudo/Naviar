@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.idea/
+.vscode/
+*.log
+.DS_Store
+.browser-check/
+/data/uploads/
+/.document-lab/
+
+/data/planning/
+
+/data/student/
+
+# Never publish runtime student data
+/data/
+*.pem
+*.key
+*.p12
+*.pfx

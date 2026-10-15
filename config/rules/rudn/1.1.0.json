@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "university_id": "rudn",
+  "rules": [
+    {
+      "version": "1.1.0",
+      "university_id": "rudn",
+      "country_of_study": "RU",
+      "student_category": [
+        "foreign_student"
+      ],
+      "recommended_buffer_days": 0,
+      "submission_place": "МФЦ РУДН",
+      "address": "Москва, ул. Миклухо-Маклая, д. 6, цокольный этаж",
+      "appointment_required": true,
+      "online_service_name": "Личный кабинет РУДН / RUDN University",
+      "source_last_verified_at": "2026-09-29",
+      "valid_from": null,
+      "valid_to": null,
+      "counting_convention": "exclude_trigger",
+      "rule_id": "rudn.visa_extension",
+      "title": "Виза",
+      "procedure_type": "visa_extension",
+      "document_type": "visa",
+      "entry_regime": [
+        "visa_required"
+      ],
+      "trigger_type": "document_expiry",
+      "trigger_date_field": "visa_expiry",
+      "offset_days": 20,
+      "day_type": "business_days",
+      "direction": "before",
+      "processing_time_days": 20,
+      "processing_time_type": "business_days",
+      "conditions": {},
+      "official_source_title": "РУДН: продление многократной визы",
+      "official_source_url": "https://eng.rudn.ru/life/mfc/services/extension-multiple-entry-visa",
+      "related_sources": [
+        {
+          "title": "РУДН: продление многократной визы (RU)",
+          "url": "https://www.rudn.ru/life/multifunctional-center/uslugi-mfc-rudn/priem-dokumentov-dlya-prodleniya-mnogokratnoy-vizy",
+          "last_verified_at": "2026-09-29"
+        }
+      ],
+      "review_status": "verified",
+      "review_reason": "",
+      "notes": "Документы на продление визы нужно подать не позднее чем за 20 рабочих дней до окончания визы.",
+      "required_documents": [
+        {
+          "title": "Удостоверение личности и две копии",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Две копии страницы с визой",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Миграционная карта и копия",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Предыдущая регистрация и копия",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Договор обучения или направление и копии",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Чек госпошлины",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Две фотографии 3×4",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Копия документа дактилоскопии",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        },
+        {
+          "title": "Копии медицинских сертификатов",
+          "conditions": {
+            "citizenship": "TKM",
+            "entry_regime": "visa_required",
+            "student_category": "foreign_student",
+            "university_id": "rudn",
+            "visa_type": "multiple_entry"
+          }
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "university_id": "rudn",
+      "country_of_study": "RU",
+      "student_category": [
+        "foreign_student"
+      ],
+      "recommended_buffer_days": 0,
+      "submission_place": "МФЦ РУДН",
+      "address": "Москва, ул. Миклухо-Маклая, д. 6, цокольный этаж",
+      "appointment_required": true,
+      "online_service_name": "Личный кабинет РУДН / RUDN University",
+      "source_last_verified_at": "2026-09-29",
+      "valid_from": null,
+      "valid_to": null,
+      "counting_convention": "exclude_trigger",
+      "rule_id": "rudn.stay_extension",
+      "title": "Продление срока пребывания: безвизовый режим",
+      "procedure_type": "stay_extension",
+      "document_type": "registration",
+      "entry_regime": [
+        "visa_free"
+      ],
+      "trigger_type": "document_expiry",
+      "trigger_date_field": "stay_expiry",
+      "offset_days": 20,
+      "day_type": "business_days",
+      "direction": "before",
+      "processing_time_days": null,
+      "processing_time_type": null,
+      "official_source_title": "Справочник РУДН: миграционный учёт",
+      "official_source_url": "https://handbook.rudn.ru/help/mfc.html",
+      "related_sources": [
+        {
+          "title": "РУДН: цифровой миграционный учёт с сентября 2026",
+          "url": "https://www.rudn.ru/media/news/life-in-rudn/studentam-iz-stran-s-bezvizovym-rejimom-procedura-migracionnogo-ucheta-perevoditsya-polnostyu-v-cifrovoy-format",
+          "last_verified_at": "2026-09-29"
+        }
+      ],
+      "review_status": "requires_clarification",
+      "review_reason": "Справочник: 20 рабочих дней. Новое сообщение РУДН различает 20 календарных дней для срока пребывания и цифровой миграционный учёт. Требуется уточнение процедуры и категории.",
+      "conditions": {
+        "residence": "university_dormitory"
+      },
+      "notes": "Срок пребывания и миграционный учёт не объединяются в одно подтверждённое правило.",
+      "required_documents": [
+        {
+          "title": "Удостоверение личности и копия"
+        },
+        {
+          "title": "Миграционная карта и копия"
+        },
+        {
+          "title": "Предыдущая регистрация и копия"
+        },
+        {
+          "title": "Копия документа дактилоскопии"
+        },
+        {
+          "title": "Копии медицинских сертификатов"
+        },
+        {
+          "title": "Договор обучения или направление и копии"
+        },
+        {
+          "title": "Договор общежития и копия"
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "university_id": "rudn",
+      "country_of_study": "RU",
+      "student_category": [
+        "foreign_student"
+      ],
+      "recommended_buffer_days": 0,
+      "submission_place": "МФЦ РУДН",
+      "address": "Москва, ул. Миклухо-Маклая, д. 6, цокольный этаж",
+      "appointment_required": true,
+      "online_service_name": "Личный кабинет РУДН / RUDN University",
+      "source_last_verified_at": "2026-09-29",
+      "valid_from": null,
+      "valid_to": null,
+      "counting_convention": "exclude_trigger",
+      "rule_id": "rudn.registration_new_visa",
+      "title": "Миграционный учёт после новой визы",
+      "procedure_type": "registration_after_new_visa",
+      "document_type": "registration",
+      "entry_regime": [
+        "visa_required"
+      ],
+      "trigger_type": "new_visa_received",
+      "trigger_date_field": "new_visa_received",
+      "offset_days": 3,
+      "day_type": "business_days",
+      "direction": "after",
+      "processing_time_days": 14,
+      "processing_time_type": "business_days",
+      "official_source_title": "Справочник РУДН: продление миграционного учёта",
+      "official_source_url": "https://handbook.rudn.ru/help/mfc.html",
+      "related_sources": [],
+      "review_status": "verified",
+      "conditions": {
+        "residence": "university_dormitory",
+        "visa_type": "multiple_entry"
+      },
+      "notes": "Для студентов в общежитии после получения новой многократной учебной визы. Начальный день не включён в расчёт; порядок отсчёта и приёма следует уточнить в МФЦ. Вне общежития этот порядок автоматически не применяется.",
+      "required_documents": [
+        {
+          "title": "Удостоверение личности и копия"
+        },
+        {
+          "title": "Новая виза и копия"
+        },
+        {
+          "title": "Миграционная карта и копия"
+        },
+        {
+          "title": "Предыдущая регистрация и копия"
+        },
+        {
+          "title": "Копия документа дактилоскопии"
+        },
+        {
+          "title": "Копии актуальных медицинских сертификатов"
+        },
+        {
+          "title": "Копия удостоверения личности родителя",
+          "conditions": {
+            "age_category": "minor"
+          }
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "university_id": "rudn",
+      "country_of_study": "RU",
+      "student_category": [
+        "foreign_student"
+      ],
+      "recommended_buffer_days": 0,
+      "submission_place": null,
+      "address": null,
+      "appointment_required": null,
+      "online_service_name": null,
+      "source_last_verified_at": "2026-09-29",
+      "valid_from": "2026-09-01",
+      "valid_to": null,
+      "counting_convention": "exclude_trigger",
+      "rule_id": "rudn.medical_after_entry",
+      "title": "Медицинское освидетельствование",
+      "procedure_type": "medical_examination",
+      "document_type": "medical_examination",
+      "entry_regime": [
+        "visa_required",
+        "visa_free"
+      ],
+      "trigger_type": "entry_date",
+      "trigger_date_field": "entry_date",
+      "offset_days": 30,
+      "day_type": "calendar_days",
+      "direction": "after",
+      "processing_time_days": null,
+      "processing_time_type": null,
+      "required_documents": [],
+      "official_source_title": "РУДН: уведомление о медосвидетельствовании",
+      "official_source_url": "https://www.rudn.ru/life/multifunctional-center/uslugi-mfc-rudn/priem-dokumentov-dlya-prodleniya-mnogokratnoy-vizy",
+      "related_sources": [
+        {
+          "title": "КДЦ РУДН: иностранным студентам",
+          "url": "https://clinic.rudn.ru/international-students/",
+          "last_verified_at": "2026-09-29"
+        }
+      ],
+      "review_status": "requires_clarification",
+      "review_reason": "Страница МФЦ сообщает о 30 календарных днях с 01.09.2026, страница клиники описывает иной срок и исключения. Применимость к конкретному студенту не подтверждена.",
+      "notes": "Кандидат правила только для въезда с 01.09.2026. Автоматический расчёт отключён до подтверждения применимости; сроки повторных обследований не заданы.",
+      "trigger_valid_from": "2026-09-01"
+    },
+    {
+      "version": "1.1.0",
+      "university_id": "rudn",
+      "country_of_study": "RU",
+      "student_category": [
+        "foreign_student"
+      ],
+      "recommended_buffer_days": 0,
+      "submission_place": null,
+      "address": null,
+      "appointment_required": null,
+      "online_service_name": null,
+      "source_last_verified_at": "2026-09-29",
+      "valid_from": null,
+      "valid_to": null,
+      "counting_convention": "exclude_trigger",
+      "rule_id": "rudn.medical_renewal",
+      "title": "Медицинское освидетельствование",
+      "procedure_type": "medical_renewal",
+      "document_type": "medical_examination",
+      "entry_regime": [
+        "visa_required",
+        "visa_free"
+      ],
+      "trigger_type": "custom",
+      "trigger_date_field": "medical_completed_at",
+      "offset_days": 0,
+      "day_type": "calendar_days",
+      "direction": "after",
+      "processing_time_days": null,
+      "processing_time_type": null,
+      "required_documents": [],
+      "official_source_title": "РУДН: уведомление о медосвидетельствовании",
+      "official_source_url": "https://www.rudn.ru/life/multifunctional-center/uslugi-mfc-rudn/priem-dokumentov-dlya-prodleniya-mnogokratnoy-vizy",
+      "related_sources": [
+        {
+          "title": "КДЦ РУДН: иностранным студентам",
+          "url": "https://clinic.rudn.ru/international-students/",
+          "last_verified_at": "2026-09-29"
+        }
+      ],
+      "review_status": "requires_clarification",
+      "review_reason": "Применимость и срок повторного освидетельствования требуют уточнения.",
+      "notes": "Период повторного освидетельствования не подтверждён. Нулевой offset является неактивным значением, а не сроком.",
+      "trigger_valid_from": null
+    }
+  ]
+}

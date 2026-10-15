@@ -1,0 +1,114 @@
+/* Shared light-blue dialog theme. Presentation only; native dialogs and handlers stay intact. */
+dialog.naviar-dialog {
+  --green: #0879f8;
+  --muted: #637da5;
+  --line: #e0ebf9;
+  --dialog-ink: #152564;
+  --dialog-blue: #0879f8;
+  font-family: "Segoe UI",Arial,sans-serif;
+  color: var(--dialog-ink);
+  background: linear-gradient(150deg,#f7fcff,#fff 24%);
+  border: 1px solid #dce9f9;
+  border-radius: 23px;
+  box-shadow: 0 22px 80px #24477a29;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #c7dcf6 transparent;
+}
+dialog.naviar-dialog::backdrop {background:#253e6659;backdrop-filter:blur(3px);}
+dialog#upload-dialog {max-width:490px;padding:28px;}
+dialog#passport-dialog, dialog#visa-dialog {max-width:620px;padding:28px;}
+dialog#medical-files-dialog {max-width:600px;padding:28px;}
+dialog#message-dialog, dialog#fallback-dialog, dialog#deadline-dialog {padding:28px;}
+dialog.naviar-dialog h2 {font-size:22px;line-height:1.3;letter-spacing:-.6px;font-weight:650;color:var(--dialog-ink);}
+dialog.naviar-dialog p {color:#637da5;line-height:1.65;}
+dialog.naviar-dialog label {color:#2c467c;}
+dialog.naviar-dialog :is(button,a,input,select,summary):focus-visible {outline:3px solid #458cff;outline-offset:3px;}
+dialog.naviar-dialog .primary {background:linear-gradient(105deg,#0867ed,#009dfa);color:#fff;border:1px solid #0879ef;border-radius:10px;min-height:46px;padding:12px 16px;font-size:13px;box-shadow:0 4px 12px #247ce614;}
+dialog.naviar-dialog .secondary {color:#3168b6;background:#f8fbff;border:1px solid #d8e7fa;border-radius:10px;min-height:44px;padding:10px 14px;font-size:12px;}
+dialog.naviar-dialog .add-document {display:inline-flex;align-items:center;justify-content:center;color:#086ee6;background:#f0f7ff;border:1px solid #d9e9ff;border-radius:8px;min-height:40px;padding:9px 12px;font-size:12px;}
+dialog.naviar-dialog button:disabled {cursor:default;opacity:1;box-shadow:none;}
+dialog.naviar-dialog .primary:disabled {background:#dceafb;border-color:#d2e4f9;color:#5e7da8;}
+dialog.naviar-dialog :is(.secondary,.add-document):disabled {background:#f2f6fc;border-color:#e2eaf5;color:#7d90ae;}
+dialog.naviar-dialog .dialog-symbol {background:#e7f4ff;color:#0879f8;border:1px solid #d4eaff;border-radius:12px;}
+#upload-dialog #upload-description {font-size:13px;line-height:1.6;margin:10px 0 20px;}
+#upload-dialog .file-picker {gap:9px;min-height:162px;padding:21px 16px;border:1px dashed #91c5fb;border-radius:14px;background:linear-gradient(135deg,#f3faff,#edf6ff);color:#176bd3;}
+#upload-dialog .file-picker:focus-within {outline:3px solid #458cff;outline-offset:3px;border-color:#458cff;}
+#upload-dialog .upload-symbol {display:grid;place-items:center;flex:none;width:42px;height:42px;border:1px solid #cce5ff;border-radius:12px;color:#0c8aff;background:#e1f2ff;}
+#upload-dialog .upload-symbol svg {width:24px;height:24px;}
+#upload-dialog #choose-file-label {font-size:14px;font-weight:600;color:#1d59ac;}
+#upload-dialog #upload-limits {font-size:11px;color:#627fa9;}
+#upload-dialog #selected-file {border:1px solid #e0ecfc;background:#f6faff;border-radius:12px;padding:14px;}
+#upload-dialog #file-preview {border-radius:8px;background:white;}
+#upload-dialog #selected-file-name {color:#244776;font-size:13px;}
+#upload-dialog #selected-file-size {color:#6a81a5;line-height:1.6;}
+#upload-dialog .text-button {color:#386cb3;min-height:40px;padding-top:8px;}
+#upload-dialog .upload-warning {font-size:11px;color:#637da5;line-height:1.65;margin:18px 0;padding:11px 12px;border-radius:9px;background:#f6f9ff;border:1px solid #eaf0fa;}
+#upload-dialog .upload-actions {margin-top:20px;gap:10px;}
+#upload-dialog .upload-actions button {padding:12px 10px;font-size:12px;min-height:46px;}
+#passport-dialog .passport-fields, #visa-dialog .passport-fields {gap:18px 16px;}
+#passport-dialog .passport-field label, #visa-dialog .passport-field label {font-size:12px;font-weight:600;line-height:1.5;color:#2c467c;margin-bottom:8px;}
+#passport-dialog .passport-field input, #visa-dialog .passport-field input, #visa-dialog .passport-field select, #fallback-dialog #fallback-value, #medical-files-dialog .medical-date-form input {background:#fbfdff;border:1px solid #d8e6f8;border-radius:10px;color:#244373;min-height:46px;width:100%;padding:10px 12px;font:inherit;font-size:14px;}
+#passport-dialog .passport-field input:focus-visible, #visa-dialog .passport-field :is(input,select):focus-visible, #medical-files-dialog .medical-dates summary:focus-visible {outline:3px solid #458cff;outline-offset:3px;}
+#passport-dialog .passport-field input[aria-invalid="true"] {border-color:#d67e95;}
+#passport-dialog .passport-warning {background:#f2f8ff;border:1px solid #e1edfc;color:#637da5;border-radius:10px;padding:12px 14px;font-size:11px;}
+#passport-dialog #passport-description, #visa-dialog .visa-description {color:#637da5;font-size:13px;line-height:1.65;margin:12px 0 18px;}
+#passport-dialog #passport-details {background:#f7fbff;border:1px solid #e1edfc;border-radius:12px;padding:16px;font-size:13px;}
+#passport-dialog #passport-details dt {color:#6a81a5;}
+#passport-dialog #passport-details dd {color:#244373;}
+#passport-dialog #passport-ocr-note, #visa-dialog #visa-ocr-note {color:#5975a1;font-size:12px;line-height:1.65;margin:10px 0 18px;}
+#passport-dialog #passport-ocr-note:empty, #visa-dialog #visa-ocr-note:empty {display:none;}
+#passport-dialog #passport-recognize, #visa-dialog #visa-recognize {background:#eaf5ff;color:#146bd3;border:1px solid #cfe6ff;border-radius:10px;min-height:44px;}
+#visa-dialog #visa-form {margin-top:20px;}
+#visa-dialog .visa-field-note {font-size:11px;line-height:1.55;color:#7186a6;margin:6px 0 0;}
+#visa-dialog .visa-field-note button {display:block;width:100%;min-height:34px;margin:6px 0 0;padding:7px 9px;font-size:11px;background:#f2f8ff;border-color:#e0ecfc;color:#4c78b2;}
+#visa-dialog #visa-additional {border:1px solid #e2edfb;border-radius:11px;background:#f8fbff;padding:12px 14px;margin:21px 0 16px;}
+#visa-dialog #visa-additional summary {font-size:12px;color:#446a9d;line-height:1.65;margin:0;}
+#visa-dialog #visa-additional[open] summary {margin-bottom:16px;}
+#passport-dialog .passport-actions, #visa-dialog .passport-actions {gap:10px;margin-top:23px;padding-top:17px;border-top:1px solid #e7effa;}
+#passport-dialog .passport-actions button, #visa-dialog .passport-actions button {font-size:12px;min-height:46px;line-height:1.4;}
+#fallback-dialog label {font-size:12px;color:#2c467c;}
+#deadline-dialog #deadline-detail-body :is(p,li) {color:#637da5;}
+#deadline-dialog #deadline-detail-body a {color:#086ee6;text-underline-offset:3px;}
+#medical-files-dialog .medical-slot--hiv {--slot-accent:#1aa4ce;--slot-ink:#226986;--slot-soft:#e9f8ff;}
+#medical-files-dialog .medical-slot--infection {--slot-accent:#d27a91;--slot-ink:#994c62;--slot-soft:#fff1f5;}
+#medical-files-dialog .medical-slot--narcology {--slot-accent:#6ba78d;--slot-ink:#3e7560;--slot-soft:#f0f8f4;}
+#medical-files-dialog #medical-files-list .medical-file {position:relative;margin-top:14px;padding:17px 18px;background:#fff;border:1px solid #e1ebf8;border-left:3px solid var(--slot-accent);border-radius:13px;box-shadow:0 3px 12px #3267a605;}
+#medical-files-dialog #medical-files-list .medical-slot--uploaded {background:linear-gradient(110deg,var(--slot-soft),#fff 70%);box-shadow:none;}
+#medical-files-dialog .medical-slot-badge {background:var(--slot-soft);color:var(--slot-ink);border-radius:6px;padding:5px 8px;font-size:10px;line-height:1.4;font-weight:600;margin-bottom:10px;}
+#medical-files-dialog .medical-slot-badge::before {width:6px;height:6px;}
+#medical-files-dialog .medical-slot--uploaded .medical-slot-badge::before {width:15px;height:15px;line-height:15px;}
+#medical-files-dialog #medical-files-list .medical-file h3 {color:#263e73;font-size:14px;line-height:1.5;font-weight:600;}
+#medical-files-dialog .medical-file small {color:#7186a6;font-size:11px;line-height:1.55;margin:8px 0;}
+#medical-files-dialog .medical-file .document-actions {margin:12px 0 0;gap:8px;}
+#medical-files-dialog #medical-files-list .medical-file .add-document {color:#1368d2;background:#eff7ff;border:1px solid #d7e9ff;padding:8px 12px;min-height:38px;font-size:11px;border-radius:8px;}
+#medical-files-dialog .medical-file :is(button,a,input,summary):focus-visible {outline:3px solid #458cff;outline-offset:3px;}
+#medical-files-dialog .medical-dates {padding-top:11px;margin-top:12px;border-top:1px solid #e6effa;}
+#medical-files-dialog .medical-dates summary {color:#5b78a6;cursor:pointer;font-size:11px;line-height:1.7;}
+#medical-files-dialog .medical-date-form label {font-size:11px;color:#3b5989;}
+#medical-files-dialog #medical-files-close {margin-top:22px;}
+#upload-dialog #upload-error, #passport-dialog #passport-error, #passport-dialog .field-error, #visa-dialog #visa-error, #fallback-dialog #fallback-error {color:#ad455f;}
+#document-toast {background:#106ce1;color:#fff;border:1px solid #6baffd;box-shadow:0 7px 24px #275d9229;border-radius:12px;}
+@media(hover:hover) {
+  dialog.naviar-dialog .primary:not(:disabled):hover {background:linear-gradient(105deg,#055bcc,#008cea);}
+  dialog.naviar-dialog :is(.secondary,.add-document):not(:disabled):hover {background:#e5f2ff;border-color:#bad8fa;}
+  #medical-files-dialog #medical-files-list .medical-file .add-document:not(:disabled):hover {background:#deeeff;border-color:#b3d4ff;color:#0d57b8;}
+  #upload-dialog .file-picker:hover {background:#eaf5ff;border-color:#69aff6;}
+}
+@media(max-width:480px) {
+  dialog.naviar-dialog {width:calc(100% - 24px);max-height:calc(100dvh - 24px);border-radius:19px;}
+  dialog#upload-dialog, dialog#passport-dialog, dialog#visa-dialog, dialog#medical-files-dialog, dialog#message-dialog, dialog#fallback-dialog, dialog#deadline-dialog {padding:22px 20px;}
+  dialog.naviar-dialog h2 {font-size:21px;}
+  #passport-dialog .passport-fields, #visa-dialog .passport-fields {gap:16px;}
+  #passport-dialog .passport-field input, #visa-dialog .passport-field :is(input,select), #fallback-dialog #fallback-value, #medical-files-dialog .medical-date-form input {font-size:16px;}
+  #medical-files-dialog #medical-files-list .medical-file {padding:15px 14px;}
+  #medical-files-dialog #medical-files-list .medical-file .add-document {min-height:40px;}
+  #upload-dialog .file-picker {min-height:152px;}
+}
+@media(max-width:360px) {
+  #upload-dialog .upload-actions, #passport-dialog .passport-actions, #visa-dialog .passport-actions {flex-direction:column;}
+  #upload-dialog .upload-actions button, #passport-dialog .passport-actions button, #visa-dialog .passport-actions button {width:100%;}
+  #medical-files-dialog .medical-file .document-actions {flex-direction:row;flex-wrap:wrap;}
+}

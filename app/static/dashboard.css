@@ -1,0 +1,246 @@
+/* Reference-led dashboard only. Onboarding, uploads and OCR dialogs keep their styles. */
+#dashboard {
+  --dash-blue: #0675f7;
+  --doc-accent: #187eff;
+  --doc-tint: #e7f3ff;
+  --dash-cyan: #00b9f3;
+  --dash-ink: #101b62;
+  --dash-muted: #61719f;
+  --dash-border: #e5effb;
+  --dash-shadow: 0 6px 24px #3972b008;
+  --dash-radius: 15px;
+  --green: #0877ed;
+  --muted: #61719f;
+  --line: #e5effb;
+  color: var(--dash-ink);
+  background: radial-gradient(ellipse at 86% 0%, #dcefff 0, transparent 42%), linear-gradient(130deg, #f4faff, #fff 50%, #f0f9ff);
+  min-height: 100dvh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+#dashboard .visually-hidden {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+#dashboard :is(button,a,input,summary):focus-visible {outline:3px solid #458cff;outline-offset:3px;}
+#dashboard button, #dashboard a {touch-action:manipulation;}
+#dashboard .header {display:flex;height:74px;max-width:none;padding:0 18px;border:0;gap:12px;}
+#dashboard .brand {display:inline-flex;align-items:center;gap:8px;color:#0c155c;letter-spacing:-.6px;text-decoration:none;}
+#dashboard .brand-symbol {width:30px;height:36px;object-fit:contain;}
+#dashboard .brand-wordmark {font-size:20px;font-weight:750;line-height:1;}
+#dashboard .brand-wordmark small {display:block;font-size:12px;font-weight:450;letter-spacing:0;margin-top:3px;}
+#dashboard .header-tagline {display:none;}
+#dashboard .header-demo {margin-left:auto;color:#6981ab;font-size:9px;letter-spacing:1px;background:#edf6ff;padding:5px 7px;border-radius:5px;}
+#dashboard .header-profile {border:0;background:none;display:flex;align-items:center;gap:10px;padding:4px;border-radius:12px;min-height:44px;}
+#dashboard .profile-avatar {width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#d4f5ff,#b9d3ff);color:#1554ac;display:grid;place-items:center;font-size:16px;font-weight:650;box-shadow:0 0 0 3px white;}
+#dashboard .header-profile-name {display:none;}
+#dashboard .dashboard-main {position:relative;max-width:820px;margin:auto;padding:4px 16px 100px;display:grid;grid-template-columns:minmax(0,1fr);gap:19px;}
+#dashboard .dashboard-main > * {min-width:0;margin:0;}
+#dashboard .greeting {padding-right:76px;min-height:67px;}
+#dashboard .greeting .eyebrow {display:none;}
+#dashboard .greeting h1 {font-size:25px;letter-spacing:-.8px;line-height:1.18;font-weight:700;margin:0 0 7px;}
+#dashboard #dashboard-document-total {font-size:12px;color:#495f9a;line-height:1.5;}
+#dashboard #profile-summary {font-size:10px;margin-top:3px;color:#6d80a9;}
+#dashboard .dashboard-overview {display:flex;align-items:center;gap:20px;}
+#dashboard .overview-progress {position:absolute;top:1px;right:18px;text-align:center;}
+#dashboard .progress-ring {--progress:0%;position:relative;display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:conic-gradient(from 0deg, #00b5f6, #087aff var(--progress), #d9edff var(--progress), #d9edff);}
+#dashboard .progress-ring::before {content:'';position:absolute;inset:6px;background:#f9fcff;border-radius:50%;}
+#dashboard #dashboard-percentage {z-index:1;font-size:16px;letter-spacing:-.5px;font-weight:750;}
+#dashboard .progress-caption {display:none;font-size:11px;color:#086eef;line-height:1.5;}
+#dashboard .next-step {position:relative;display:flex;gap:12px;align-items:flex-start;width:100%;padding:18px 16px;margin:0;border:1px solid #59b7ff;border-radius:12px;background:radial-gradient(ellipse at 100% 0%,#32cfff9c,transparent 55%),linear-gradient(110deg,#0752bd,#008bf8);box-shadow:0 5px 20px #1578d424;color:white;}
+#dashboard .next-step > div:last-child {min-width:0;width:100%;}
+#dashboard .next-step .spark {display:grid;place-items:center;flex:none;width:36px;height:40px;border:1px solid #6dcfff70;border-radius:8px;background:linear-gradient(135deg,#19cfff,#0780f6);margin-top:6px;color:white;}
+#dashboard .spark svg {width:23px;height:23px;}
+#dashboard .next-step .eyebrow {font-size:11px;line-height:1.4;font-weight:400;letter-spacing:0;color:#d8ecff;}
+#dashboard .next-step h2 {margin:6px 0;font-size:17px;line-height:1.3;color:white;}
+#dashboard .next-step:has(.primary-action) #next-action-title {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);}
+#dashboard .student-action {margin:10px 0 0;}
+#dashboard .primary-action {position:relative;margin:4px 0 0;padding-right:46px;min-height:40px;}
+#dashboard .primary-action h3 {font-size:17px;font-weight:650;letter-spacing:-.2px;line-height:1.3;margin:0 0 6px;}
+#dashboard .next-step p {color:#e6f2ff;font-size:11px;line-height:1.55;}
+#dashboard .next-step .action-timing {font-size:10px;line-height:1.4;}
+#dashboard .primary-action > button {position:absolute;right:0;top:0;width:40px;min-height:40px;border-radius:50%;border:1px solid #fff;background:#fff;color:#0874f3;font-size:0;margin:0;padding:0;box-shadow:0 2px 12px #073e7e24;}
+#dashboard .primary-action > button::after {content:'→';font-size:25px;line-height:1;}
+#dashboard .other-actions {margin-top:8px;}
+#dashboard .other-actions > summary {font-size:10px;color:#d6ecff;cursor:pointer;min-height:24px;line-height:24px;}
+#dashboard .other-actions[open] {border-top:1px solid #ffffff3d;padding-top:8px;}
+#dashboard .other-actions .student-action {padding-top:10px;border-top:1px solid #ffffff30;}
+#dashboard .other-actions .student-action h3 {color:white;}
+#dashboard .other-actions .add-document {margin-top:8px;}
+#dashboard .section-heading {margin-bottom:11px;gap:12px;}
+#dashboard .section-heading h2 {font-size:17px;font-weight:650;letter-spacing:-.4px;}
+#dashboard .section-caption {font-size:10px;color:var(--dash-muted);}
+#dashboard .count {padding:4px 9px;font-size:11px;background:#edf6ff;color:#0874f3;border-radius:8px;}
+#dashboard #documents, #dashboard #student-guidance {scroll-margin-top:20px;}
+#dashboard .document-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch;}
+#dashboard .document-card {--doc-accent:#0979f5;--doc-tint:#e7f3ff;position:relative;display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:165px;padding:12px 10px;border-radius:12px;border:1px solid var(--dash-border);background:linear-gradient(145deg,#fff 40%,#f7fbff);box-shadow:var(--dash-shadow);}
+#dashboard .document-card[data-document-type="visa"] {--doc-accent:#009ebc;--doc-tint:#e1f7fb;}
+#dashboard .document-card[data-document-type="migration_card"] {--doc-accent:#377cfb;--doc-tint:#e9f1ff;}
+#dashboard .document-card[data-document-type="registration"] {--doc-accent:#7962d9;--doc-tint:#f0edff;}
+#dashboard .document-card[data-document-type="medical_certificates"] {--doc-accent:#048cfc;--doc-tint:#e5f6ff;}
+#dashboard .document-icon {color:var(--doc-accent);width:33px;height:35px;padding:7px;border-radius:8px;background:var(--doc-tint);margin:0 0 9px;flex-shrink:0;}
+#dashboard .document-card h3 {font-size:12px;line-height:1.2;letter-spacing:-.25px;min-height:29px;margin:0 0 6px;font-weight:600;overflow-wrap:normal;}
+#dashboard .document-status {font-size:10px;line-height:1.4;margin:0 0 4px;color:#2875a3;}
+#dashboard .document-verification-note {font-size:10px;line-height:1.35;margin:0 0 8px;color:#b34c5b;}
+#dashboard .document-card[data-state="verified"] .document-status {color:#088497;}
+#dashboard .document-card[data-state="empty"] h3::after {content:'Не загружен';display:block;font-size:9px;letter-spacing:0;color:#7485a9;font-weight:400;margin-top:7px;}
+#dashboard .document-card[data-document-type="medical_certificates"] h3::after {display:none;}
+#dashboard .document-filename {display:block;font-size:11px;color:#61719f;margin-bottom:8px;max-width:100%;overflow-wrap:anywhere;white-space:normal;}
+#dashboard .add-document {display:inline-flex;align-items:center;justify-content:center;background:#f2f8ff;border:1px solid #d9eaff;border-radius:8px;color:#086eec;padding:8px 11px;min-height:40px;font-size:11px;margin:0;text-decoration:none;}
+#dashboard .document-card > .add-document {margin-top:auto;min-height:36px;width:100%;font-size:10px;}
+#dashboard .document-actions {display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;width:100%;}
+#dashboard .document-actions .verify-document {width:100%;padding:7px 4px;min-height:36px;font-size:9px;background:#f0f7ff;border-color:#e0eeff;color:#0a70e9;flex-basis:auto;}
+#dashboard .medical-count {font-size:11px;margin:0 0 7px;color:#0875f9;line-height:1.4;}
+#dashboard .medical-progress {position:absolute;height:4px;left:10px;right:10px;bottom:8px;border-radius:8px;background:linear-gradient(to right,#0784ff var(--medical-progress),#e1edfa var(--medical-progress));}
+#dashboard .document-card:has(.medical-progress) {padding-bottom:19px;}
+#dashboard .medical-add {width:100%;font-size:9px;padding:7px 4px;line-height:1.3;min-height:36px;}
+#dashboard .document-menu {position:absolute;top:5px;right:4px;z-index:1;}
+#dashboard .document-menu summary {display:grid;place-items:center;width:36px;min-height:36px;cursor:pointer;font-size:24px;line-height:1;color:#6f86b5;list-style:none;border-radius:8px;}
+#dashboard .document-menu summary::-webkit-details-marker {display:none;}
+#dashboard .document-menu[open] {z-index:4;}
+#dashboard .document-menu-content {position:absolute;right:0;top:37px;background:#fff;border:1px solid #d9e9fc;padding:12px;box-shadow:0 8px 32px #234e8929;border-radius:10px;width:180px;display:flex;flex-wrap:wrap;gap:6px;}
+#dashboard .document-menu-content .add-document {font-size:11px;min-height:40px;}
+#dashboard .document-menu-content .document-filename {width:100%;}
+#dashboard #documents-status {font-size:12px;color:#61719f;}
+#dashboard .deadline-grid {display:grid;grid-template-columns:minmax(0,1fr);gap:0;background:white;border:1px solid var(--dash-border);border-radius:12px;padding:0 12px;box-shadow:var(--dash-shadow);}
+#dashboard #student-status:empty {display:none;}
+#dashboard #student-deadlines .deadline-card {display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:3px 10px;align-items:center;padding:12px 0;border:0;border-bottom:1px solid #ecf3fd;border-radius:0;background:none;min-width:0;}
+#dashboard #student-deadlines .deadline-card:last-child {border-bottom:0;}
+#dashboard .deadline-icon {grid-column:1;grid-row:1 / span 2;}
+#dashboard .deadline-icon .document-icon {margin:0;width:32px;height:34px;padding:6px;}
+#dashboard #student-deadlines h3 {grid-column:2;margin:0;font-size:12px;line-height:1.3;font-weight:500;}
+#dashboard .deadline-value {grid-column:3;grid-row:1 / span 2;display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:2px;}
+#dashboard .deadline-value strong {font-size:18px;font-weight:600;line-height:1;color:#1476ef;}
+#dashboard .deadline-value span {font-size:9px;color:#627aa4;max-width:100px;line-height:1.3;}
+#dashboard .deadline-details {grid-column:2 / 4;min-width:0;}
+#dashboard .deadline-details summary {font-size:10px;line-height:1.5;color:#5c80b2;cursor:pointer;min-height:20px;}
+#dashboard .deadline-details[open] {padding-top:6px;}
+#dashboard .deadline-details[open] summary {margin-bottom:8px;}
+#dashboard .deadline-card p {font-size:11px;line-height:1.5;color:#61719f;margin:6px 0;}
+#dashboard .deadline-details button {margin:6px 5px 0 0;font-size:10px;}
+#dashboard [data-student-document="migration_card"] {order:4;}
+#dashboard .assistant-card {position:relative;display:block;min-height:160px;padding:18px;border:1px solid #e1edfe;background:linear-gradient(130deg,#f6fcff,#e8f2ff 70%,#e8efff);border-radius:12px;overflow:hidden;box-shadow:var(--dash-shadow);}
+#dashboard .assistant-copy {position:relative;z-index:1;padding-right:96px;}
+#dashboard .assistant-card h2 {font-size:19px;letter-spacing:-.5px;font-weight:700;margin:0 0 8px;}
+#dashboard .assistant-card p {font-size:12px;line-height:1.5;color:#5a72a3;max-width:185px;}
+#dashboard .assistant-card .primary {display:inline-flex;align-items:center;justify-content:center;gap:12px;width:auto;min-height:37px;font-size:11px;padding:9px 13px;margin:12px 0 0;border:0;border-radius:18px;background:#dcefff;color:#0868ed;}
+#dashboard .assistant-illustration {position:absolute;right:-3px;bottom:16px;width:108px;height:120px;object-fit:contain;pointer-events:none;}
+#dashboard .assistant-spark {position:absolute;right:20px;top:14px;color:#02bdf3;font-size:19px;}
+#dashboard .assistant-disclaimer {display:block;font-size:9px;color:#6580ae;margin-top:8px;line-height:1.5;}
+#dashboard .encouragement-card, #dashboard .support-card {display:none;}
+#dashboard .dashboard-note {font-size:9px;line-height:1.6;text-align:center;color:#7187ad;}
+#dashboard .bottom-nav {display:flex;gap:4px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:#fffffffa;border-top:1px solid #e5effb;box-shadow:0 -4px 18px #4879a908;}
+#dashboard .bottom-nav :is(button,.deadlines-nav) {display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:48px;color:#626ca2;font-size:9px;padding:4px 1px;border:0;border-radius:10px;background:none;}
+#dashboard .bottom-nav :is(button,.deadlines-nav) > span:first-child {display:flex;align-items:center;font-size:20px;line-height:1;}
+#dashboard .bottom-nav svg {width:21px;height:21px;}
+#dashboard .bottom-nav button[aria-current] {color:#057aff;background:#edf7ff;}
+#dashboard .sidebar-brand, #dashboard .nav-caption, #dashboard .sidebar-footer, #dashboard .sidebar-note {display:none;}
+@media(hover:hover) {
+  #dashboard .document-card:hover {border-color:#bad9fc;box-shadow:0 5px 20px #1c80ed0e;}
+  #dashboard .add-document:hover, #dashboard .document-menu summary:hover {background:#dfedff;color:#064dba;}
+  #dashboard .primary-action > button:hover {background:#e5f8ff;}
+  #dashboard .assistant-card .primary:hover {background:#c5e5ff;}
+  #dashboard .bottom-nav :is(button,.deadlines-nav):hover {background:#edf6ff;color:#0868ed;}
+}
+@media(max-width:360px) {
+  #dashboard .dashboard-main {padding-left:12px;padding-right:12px;gap:16px;}
+  #dashboard .greeting h1 {font-size:23px;}
+  #dashboard .document-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  #dashboard .document-actions {flex-direction:row;}
+  #dashboard .primary-action h3 {font-size:15px;}
+  #dashboard .next-step {padding:14px 12px;gap:8px;}
+  #dashboard .next-step .spark {width:30px;}
+  #dashboard .section-heading h2 {font-size:16px;}
+}
+@media(min-width:700px) {
+  #dashboard .dashboard-main {gap:22px;padding-left:24px;padding-right:24px;}
+  #dashboard .document-grid {grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;}
+  #dashboard .document-card {min-height:186px;padding:14px 12px;}
+  #dashboard .overview-progress {position:static;flex-shrink:0;}
+  #dashboard .progress-ring {width:96px;height:96px;}
+  #dashboard .progress-ring::before {inset:9px;background:#f0f9ff;}
+  #dashboard #dashboard-percentage {font-size:23px;}
+  #dashboard .progress-caption {display:block;margin-top:8px;}
+  #dashboard .dashboard-overview {background:linear-gradient(125deg,#d5f2ff,#f0faff);border:1px solid #e0f0fe;border-radius:13px;padding:18px 20px;}
+  #dashboard .greeting {padding-right:0;min-height:0;}
+  #dashboard .greeting h1 {font-size:31px;}
+  #dashboard #dashboard-document-total {font-size:14px;}
+  #dashboard .next-step {padding:18px;}
+}
+@media(min-width:1100px) {
+  #dashboard {padding:0 24px 22px 232px;}
+  #dashboard .header {height:82px;max-width:1360px;margin:auto;padding:0 8px;}
+  #dashboard .mobile-brand {display:none;}
+  #dashboard .header-tagline {display:flex;align-items:center;gap:12px;color:#1c3d87;font-size:15px;font-weight:600;}
+  #dashboard .header-tagline small {display:block;font-size:11px;font-weight:400;color:#7088b5;margin-top:3px;}
+  #dashboard .header-emblem {color:#0087ff;font-size:28px;}
+  #dashboard .header-profile-name {display:block;font-size:12px;color:#17386f;font-weight:600;text-align:left;}
+  #dashboard .header-profile-name small {display:block;font-size:10px;font-weight:400;color:#7a8eb0;margin-top:3px;}
+  #dashboard .header-demo {margin-right:8px;}
+  #dashboard .dashboard-main {max-width:1360px;padding:24px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px 16px;background:#ffffffb8;border:1px solid #edf5ff;border-radius:18px;box-shadow:0 10px 40px #5e97d506;}
+  #dashboard .greeting {grid-column:1 / -1;grid-row:1;}
+  #dashboard .greeting h1 {font-size:32px;}
+  #dashboard #profile-summary {position:absolute;right:26px;top:33px;background:#f0f7ff;border:1px solid #e4efff;padding:6px 10px;border-radius:8px;font-size:11px;}
+  #dashboard .dashboard-overview {grid-column:1 / 9;grid-row:2;align-self:stretch;gap:18px;padding:18px;min-height:177px;}
+  #dashboard .overview-progress {width:106px;}
+  #dashboard .progress-ring {margin:auto;}
+  #dashboard .next-step {align-self:center;}
+  #dashboard .next-step .primary-action h3 {font-size:18px;}
+  #dashboard .assistant-card {grid-column:9 / -1;grid-row:2;min-height:177px;padding:20px 16px;align-self:stretch;}
+  #dashboard .assistant-illustration {width:111px;height:123px;right:-5px;bottom:13px;}
+  #dashboard .assistant-copy {padding-right:76px;}
+  #dashboard .assistant-card p {font-size:12px;max-width:178px;}
+  #dashboard #documents {grid-column:1 / -1;grid-row:3;}
+  #dashboard .document-card {min-height:184px;padding:16px;}
+  #dashboard .document-card h3 {font-size:14px;min-height:33px;margin-bottom:7px;}
+  #dashboard .document-icon {width:38px;height:40px;padding:9px;}
+  #dashboard .document-status, #dashboard .document-verification-note {font-size:11px;}
+  #dashboard .document-actions .verify-document, #dashboard .medical-add, #dashboard .document-card > .add-document {font-size:11px;min-height:36px;}
+  #dashboard .document-menu {right:8px;top:8px;}
+  #dashboard .medical-count {font-size:12px;}
+  #dashboard #student-guidance {grid-column:1 / 7;grid-row:4;}
+  #dashboard .deadline-grid {padding:0 16px;}
+  #dashboard #student-deadlines .deadline-card {padding:11px 0;}
+  #dashboard .section-heading h2 {font-size:18px;}
+  #dashboard .section-caption {font-size:10px;}
+  #dashboard .encouragement-card, #dashboard .support-card {display:flex;flex-direction:column;align-self:stretch;padding:18px;border:1px solid #e6f0ff;background:linear-gradient(135deg,#ddf2ff,#fafdff 65%);border-radius:12px;overflow:hidden;}
+  #dashboard .encouragement-card {grid-column:7 / 10;grid-row:4;}
+  #dashboard .support-card {grid-column:10 / -1;grid-row:4;background:linear-gradient(130deg,#edf8ff,#fafdff);}
+  #dashboard .study-illustration {width:144px;height:105px;margin:8px auto 16px;}
+  #dashboard .encouragement-card h2, #dashboard .support-card h2 {font-size:19px;line-height:1.25;letter-spacing:-.5px;margin:0 0 10px;}
+  #dashboard .encouragement-card p, #dashboard .support-card p {font-size:12px;line-height:1.6;color:#6d85b1;}
+  #dashboard .support-icon {display:grid;place-items:center;width:58px;height:60px;background:linear-gradient(135deg,#d0f4ff,#e6f1ff);border-radius:16px;color:#008cff;margin:14px 0 25px;}
+  #dashboard .support-icon svg {width:37px;height:37px;}
+  #dashboard .support-link {display:inline-flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding:10px 12px;background:white;border:1px solid #c6defc;border-radius:20px;color:#0876fb;font-size:11px;min-height:40px;}
+  #dashboard #deadline-section {grid-column:1 / -1;}
+  #dashboard .dashboard-note {grid-column:1 / -1;grid-row:6;text-align:left;font-size:10px;}
+  #dashboard .bottom-nav {position:fixed;top:0;left:0;bottom:0;right:auto;width:208px;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:8px;padding:30px 18px 22px;background:#ffffffb8;border:0;border-right:1px solid #e3eefe;box-shadow:none;}
+  #dashboard .sidebar-brand {display:flex;margin:0 0 33px 6px;}
+  #dashboard .sidebar-brand .brand-symbol {width:33px;height:40px;}
+  #dashboard .sidebar-brand .brand-wordmark {font-size:22px;}
+  #dashboard .sidebar-brand .brand-wordmark small {font-size:13px;}
+  #dashboard .bottom-nav :is(button,.deadlines-nav) {flex:none;flex-direction:row;justify-content:flex-start;gap:13px;padding:13px 14px;max-width:none;min-height:48px;font-size:13px;border-radius:10px;}
+  #dashboard .bottom-nav svg {width:22px;height:22px;}
+  #dashboard .bottom-nav button[aria-current] {background:linear-gradient(100deg,#dcf3ff,#c9e8ff);color:#0472f9;}
+  #dashboard .sidebar-note {display:flex;flex-direction:column;padding:18px 14px;margin-top:auto;min-height:180px;background:linear-gradient(140deg,#d1edff,#eff8ff 75%);border:1px solid #e1efff;border-radius:12px;}
+  #dashboard .sidebar-note > span {font-size:47px;color:#0b8bfa;line-height:1;margin:3px 0 17px;}
+  #dashboard .sidebar-note strong {font-size:13px;line-height:1.5;font-weight:600;}
+  #dashboard .sidebar-note p {font-size:11px;line-height:1.6;margin-top:8px;color:#6a81ac;}
+  #dashboard .sidebar-footer {display:flex;align-items:center;gap:9px;padding:17px 4px 0;margin-top:12px;border-top:1px solid #e2edfc;}
+  #dashboard .sidebar-avatar {display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#e2f2ff;color:#2770be;font-size:13px;}
+  #dashboard .sidebar-footer strong {font-size:12px;font-weight:600;}
+  #dashboard .sidebar-footer div > span {display:block;font-size:9px;color:#7c90b8;margin-top:3px;}
+}
+@media(min-width:1500px) {
+  #dashboard {padding-left:250px;padding-right:34px;}
+  #dashboard .bottom-nav {width:222px;}
+  #dashboard .dashboard-main {padding:28px;gap:26px 20px;}
+  #dashboard .next-step .primary-action h3 {font-size:20px;}
+}
+@media(prefers-reduced-motion:no-preference) {
+  #dashboard :is(button,a,.document-card) {transition:background .15s,border-color .15s,box-shadow .15s;}
+}
+
+@media(max-width:699px) {
+  #dashboard .document-card:nth-child(3n + 1) .document-menu-content {right:auto;left:-64px;}
+}
+@media(max-width:360px) {
+  #dashboard .document-card:nth-child(3n + 1) .document-menu-content {right:0;left:auto;}
+  #dashboard .document-card:nth-child(2n + 1) .document-menu-content {right:auto;left:-64px;}
+}

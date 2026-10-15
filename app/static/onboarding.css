@@ -1,0 +1,72 @@
+/* Welcome/profile screen. Scoped so the dashboard and document dialogs are unaffected. */
+#onboarding {
+  --welcome-blue: #0879f8;
+  --welcome-ink: #111d63;
+  --welcome-muted: #657ea8;
+  min-height:100dvh;
+  color:var(--welcome-ink);
+  background:radial-gradient(ellipse at 0% 0%,#def3ff,transparent 60%),linear-gradient(140deg,#f5fbff,#fff 70%);
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+#onboarding .intro {position:relative;background:none;padding:24px 24px 26px;min-width:0;}
+#onboarding .brand {display:inline-flex;align-items:center;gap:9px;color:#0c155c;letter-spacing:-.6px;}
+#onboarding .brand-symbol {width:33px;height:39px;object-fit:contain;}
+#onboarding .brand-wordmark {font-size:23px;font-weight:750;line-height:1;}
+#onboarding .brand-wordmark small {display:block;font-size:13px;font-weight:450;letter-spacing:0;margin-top:4px;}
+#onboarding .intro-copy {margin:28px 0 0;padding:0;}
+#onboarding .eyebrow {display:block;font-size:9px;font-weight:600;letter-spacing:1.7px;color:#6784b0;}
+#onboarding .intro h1 {font-size:40px;line-height:1.08;letter-spacing:-1.7px;font-weight:700;margin:12px 0 13px;}
+#onboarding .intro h1 span {color:#0879f8;background:linear-gradient(115deg,#005be4,#00b9f2);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+#onboarding .intro-copy p {font-size:14px;line-height:1.65;color:#5a78a5;max-width:360px;}
+#onboarding .intro-footer {display:none;}
+#onboarding .setup {background:none;padding:0 16px 28px;min-width:0;}
+#onboarding .setup-inner {max-width:490px;width:100%;margin:auto;padding:25px 22px 22px;border:1px solid #e2edfb;border-radius:22px;background:#fff;box-shadow:0 14px 50px #367ac30b;}
+#onboarding .step {gap:8px;margin-bottom:23px;color:#6a81a7;font-size:8px;letter-spacing:1.2px;}
+#onboarding .step > span:first-child {width:7px;height:7px;background:#119bfd;box-shadow:0 0 0 4px #ecf7ff;}
+#onboarding .step > span:last-child {color:#3385e5;letter-spacing:.6px;}
+#onboarding .setup h2 {font-size:25px;line-height:1.25;letter-spacing:-.7px;font-weight:650;}
+#onboarding .subtitle {margin-top:9px;color:var(--welcome-muted);font-size:13px;line-height:1.65;}
+#onboarding #profile-form {margin-top:25px;}
+#onboarding label {font-size:12px;font-weight:600;color:#29467e;margin:18px 0 8px;}
+#onboarding select {width:100%;height:51px;font-size:16px;line-height:1.3;padding:0 13px;background:#fbfdff;color:#203d76;border:1px solid #d9e7f8;border-radius:10px;}
+#onboarding select:focus {border-color:#62a9fa;}
+#onboarding :is(button,a,select):focus-visible {outline:3px solid #468eff;outline-offset:3px;}
+#onboarding .continue {min-height:51px;padding:14px 17px;justify-content:space-between;gap:16px;margin-top:25px;border-radius:10px;border:1px solid #0876ee;background:linear-gradient(105deg,#0763e8,#009cfa);color:white;font-size:13px;font-weight:600;box-shadow:0 6px 16px #1879ed1a;}
+#onboarding .continue > span:last-child {font-size:21px;line-height:1;}
+#onboarding .form-note {font-size:10px;line-height:1.7;color:#6d84a9;margin-top:16px;}
+#onboarding #storage-error {font-size:12px;line-height:1.6;color:#a13d54;}
+@media(hover:hover) {
+  #onboarding select:hover {border-color:#b0d0f4;background:#f7fbff;}
+  #onboarding .continue:hover {background:linear-gradient(105deg,#0558ce,#008bef);box-shadow:0 7px 20px #1879ed26;}
+}
+@media(min-width:760px) {
+  #onboarding {display:grid;grid-template-columns:46% 54%;background:radial-gradient(ellipse at 0% 48%,#d4efff80,transparent 48%),radial-gradient(ellipse at 100% 0%,#e4f3ff,transparent 45%),#f8fcff;}
+  #onboarding .intro {padding:38px clamp(32px,5.5vw,90px);display:flex;flex-direction:column;min-height:100dvh;}
+  #onboarding .intro-copy {margin:auto 0;padding:55px 0;}
+  #onboarding .intro h1 {font-size:clamp(48px,5.4vw,80px);letter-spacing:-3px;line-height:1.06;margin:22px 0;}
+  #onboarding .intro-copy p {font-size:17px;line-height:1.75;}
+  #onboarding .eyebrow {font-size:10px;letter-spacing:1.8px;}
+  #onboarding .intro-footer {display:block;color:#7289ad;font-size:11px;line-height:1.7;max-width:330px;}
+  #onboarding .setup {display:flex;align-items:center;padding:38px clamp(26px,4vw,64px);}
+  #onboarding .setup-inner {padding:36px 34px 30px;border-radius:24px;box-shadow:0 16px 60px #367ac310;}
+  #onboarding .step {margin-bottom:29px;font-size:9px;}
+  #onboarding .setup h2 {font-size:28px;}
+  #onboarding .subtitle {font-size:14px;}
+  #onboarding .form-note {font-size:11px;}
+}
+@media(max-width:359px) {
+  #onboarding .intro {padding:22px 20px;}
+  #onboarding .intro h1 {font-size:36px;}
+  #onboarding .setup {padding-left:12px;padding-right:12px;}
+  #onboarding .setup-inner {padding:24px 18px 20px;}
+  #onboarding .setup h2 {font-size:23px;}
+  #onboarding .step {font-size:7px;letter-spacing:.8px;}
+}
+
+@media(max-width:759px) {
+  #onboarding .intro-copy {margin-top:23px;}
+  #onboarding .intro-copy .eyebrow {display:none;}
+  #onboarding .intro h1 {font-size:32px;letter-spacing:-1.1px;line-height:1.15;margin:0 0 10px;}
+  #onboarding .intro-copy br {display:none;}
+  #onboarding .intro-copy p {font-size:13px;line-height:1.6;}
+}

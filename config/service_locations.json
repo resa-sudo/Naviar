@@ -1,0 +1,18 @@
+[
+  {
+    "name": "МФЦ РУДН",
+    "service_types": [
+      "visa_extension",
+      "stay_extension",
+      "registration_after_new_visa"
+    ],
+    "city": "Москва",
+    "address": "Москва, ул. Миклухо-Маклая, д. 6, цокольный этаж",
+    "phone": "+7 (499) 936-87-87",
+    "appointment_required": null,
+    "price_if_verified": null,
+    "working_hours": "Пн–пт 09:00–19:00; сб 10:00–15:00",
+    "official_source": "https://www.rudn.ru/life/multifunctional-center",
+    "last_verified_at": "2026-09-29"
+  }
+]

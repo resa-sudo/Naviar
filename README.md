@@ -87,4 +87,3 @@ python -m venv .venv
 - [Контекст студента](docs/student-context.md)
 - [Медицинские сертификаты](docs/medical-certificates.md)
 - [История разработки](docs/development-notes.md)
-

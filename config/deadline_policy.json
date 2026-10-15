@@ -1,0 +1,6 @@
+{
+  "urgent_days": 3,
+  "attention_days": 10,
+  "status_day_type": "calendar_days",
+  "source_max_age_days": 90
+}

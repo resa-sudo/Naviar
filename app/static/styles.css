@@ -1,0 +1,113 @@
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#192d29;background:#f6f8f7;font-synthesis:none;--green:#123c34;--muted:#72817b;--line:#e1e7e3}
+*{box-sizing:border-box}body{margin:0}button,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit;text-decoration:none}[hidden]{display:none!important}h1,h2,p{margin:0}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #77ab95;outline-offset:4px}.brand{display:inline-flex;align-items:center;gap:11px;font-size:23px;font-weight:750;letter-spacing:2px}.brand-mark{display:grid;place-items:center;background:var(--green);color:white;width:35px;height:35px;border-radius:10px;font-size:21px;font-style:italic;letter-spacing:-3px;padding-right:3px}.onboarding{min-height:100dvh}.intro{padding:28px 24px;background:#e9efeb}.intro-copy{margin-top:36px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:1.9px;color:var(--muted)}.intro h1{font-size:44px;line-height:1.08;letter-spacing:-2px;margin:14px 0}.intro h1 span{color:#7ca184}.intro-copy p{font-size:15px;line-height:1.7;color:#60746b}.intro-footer{display:none}.setup{padding:32px 24px 40px;background:#fff}.setup-inner{max-width:420px;margin:auto}.step{display:flex;align-items:center;gap:8px;font-size:9px;font-weight:650;letter-spacing:1.4px;color:var(--muted);margin-bottom:26px}.step>span:first-child{width:6px;height:6px;border-radius:50%;background:#477960}.step>span:last-child{margin-left:auto}.setup h2{font-size:27px;letter-spacing:-.9px}.subtitle{color:var(--muted);line-height:1.6;font-size:14px;margin-top:9px}form{margin-top:30px}label{display:block;font-size:12px;font-weight:650;margin:20px 0 9px}select{width:100%;height:50px;border:1px solid #dce4df;border-radius:9px;padding:0 13px;background:#fcfdfc;color:#243d33;font-size:14px}.primary{background:var(--green);color:#fff;border:0;border-radius:9px;min-height:49px;padding:14px 19px;display:flex;justify-content:center;gap:25px;align-items:center;font-size:13px;font-weight:600}.primary:hover{background:#205346}.continue{width:100%;justify-content:space-between;margin-top:28px}.form-note{font-size:11px;line-height:1.7;text-align:center;color:var(--muted);margin-top:17px}#storage-error{color:#9a382f;font-size:13px;margin-top:12px}.header{height:84px;max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid var(--line)}.student-badge{font-size:10px;letter-spacing:1.5px;font-weight:600}.student-badge span{color:var(--muted);margin-left:8px}.dashboard-main{max-width:960px;padding:34px 22px 116px;margin:auto}.greeting{margin-bottom:34px}.greeting h1{font-size:32px;letter-spacing:-1px;margin-top:11px}.section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:17px}h2{font-size:18px;letter-spacing:-.4px}.count{font-size:11px;color:var(--muted);background:#eaf0ec;border-radius:20px;padding:5px 10px}.document-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}.document-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px 14px;display:flex;flex-direction:column;align-items:flex-start;min-height:180px}.document-icon{width:35px;height:39px;color:#658371;margin-bottom:18px}.document-card h3{font-size:13px;line-height:1.4;margin:0 0 16px;font-weight:600}.add-document{margin-top:auto;border:1px solid var(--line);background:white;border-radius:7px;padding:8px 11px;color:#526d60;font-size:12px;min-height:36px}.add-document:hover{background:#edf3ee}.next-step{display:flex;align-items:flex-start;gap:17px;background:#eaf0e9;border:1px solid #dfe7dc;border-radius:13px;margin-top:26px;padding:23px 20px}.spark{flex-shrink:0;display:grid;place-items:center;width:33px;height:33px;border:1px solid #c6d4c0;border-radius:50%;font-size:23px;color:#69815b}.next-step h2{margin:9px 0;font-size:19px}.next-step p,.assistant-card p{font-size:13px;line-height:1.8;color:#6b7a71;max-width:550px}.assistant-card{margin-top:23px;background:white;border:1px solid var(--line);border-radius:13px;padding:24px}.assistant-card h2{margin:10px 0 6px}.assistant-card button{width:100%;margin-top:22px}.dashboard-note{text-align:center;font-size:10px;color:#85928a;margin-top:25px;line-height:1.8}.bottom-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:center;background:#fff;border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));z-index:2}.bottom-nav button{flex:1;max-width:150px;background:none;border:0;color:#829087;display:flex;align-items:center;flex-direction:column;gap:5px;font-size:10px;padding:5px;border-radius:8px}.bottom-nav button>span:first-child{font-size:23px;line-height:25px}.bottom-nav button[aria-current]{color:var(--green);background:#edf3ef}.bottom-nav button:hover{background:#f2f6f3}dialog{border:1px solid var(--line);border-radius:18px;padding:28px;max-width:420px;width:calc(100% - 40px);color:#192d29}dialog::backdrop{background:#132b2466}dialog p{font-size:14px;line-height:1.7;color:var(--muted);margin:14px 0 24px}dialog button{width:100%}.dialog-symbol{display:grid;place-items:center;width:35px;height:35px;background:#eaf0e9;border-radius:50%;margin-bottom:18px}
+@media(min-width:760px){.onboarding{display:grid;grid-template-columns:45% 55%}.intro{padding:44px 12%;display:flex;flex-direction:column;min-height:100dvh}.intro-copy{margin:auto 0;padding:65px 0}.intro h1{font-size:clamp(48px,5.5vw,80px);letter-spacing:-3px;margin:24px 0}.intro-copy p{font-size:18px}.intro-footer{display:block;font-size:11px;color:#728277;line-height:1.7}.setup{display:flex;align-items:center;padding:48px}.setup-inner{width:100%}.dashboard-main{padding-top:46px}.greeting h1{font-size:38px}.document-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.document-card{padding:23px;min-height:194px}.document-card h3{font-size:14px}.next-step{padding:27px}.assistant-card{display:flex;justify-content:space-between;align-items:center;padding:28px}.assistant-card button{width:auto;margin:0}.bottom-nav{gap:20px}.dashboard-note{margin-top:30px}}
+@media(prefers-reduced-motion:no-preference){button{transition:background .15s}}
+
+/* Local document uploads extend the existing card and dialog styles. */
+.document-card{min-width:0}
+.document-status{font-size:11px;color:#477960;margin:-5px 0 8px}
+.document-filename{font-size:11px;color:var(--muted);max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:14px}
+.document-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.document-actions .add-document{font-size:11px;display:inline-flex;align-items:center;margin:0;padding:7px 9px}
+#documents-status{font-size:12px;color:var(--muted);line-height:1.7}
+#documents-status:not(:empty){margin-bottom:14px}
+#documents-status button{margin-left:8px}
+button:disabled{cursor:default;opacity:.55}
+#upload-dialog{max-width:460px;max-height:calc(100dvh - 32px);overflow-y:auto;padding:26px}
+#upload-form{margin-top:20px}
+#upload-description{margin-bottom:18px}
+.file-picker{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:116px;border:1px dashed #a4b9aa;border-radius:11px;background:#f6f9f6;padding:18px;color:var(--green)}
+.file-picker input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.file-picker:focus-within{outline:3px solid #77ab95;outline-offset:3px}
+.file-picker input:disabled{cursor:wait}
+#choose-file-label{font-size:14px;font-weight:600}
+#upload-limits{font-size:11px;color:var(--muted)}
+#selected-file{margin-top:16px;padding:14px;background:#f6f8f7;border-radius:10px;min-width:0}
+#file-preview{display:block;width:100%;max-height:150px;object-fit:contain;margin-bottom:12px;border-radius:5px}
+#selected-file-name{display:block;font-size:12px;overflow-wrap:anywhere;font-weight:600}
+#selected-file-size{display:block;font-size:11px;color:var(--muted);margin-top:6px}
+#upload-dialog .text-button{width:auto;border:0;background:none;padding:10px 0 0;color:#687d70;font-size:12px;text-align:left;min-height:36px}
+#upload-dialog .upload-warning{font-size:11px;line-height:1.7;margin:16px 0;color:#778378}
+#upload-error{color:#9a382f;font-size:12px;line-height:1.6;margin:0}
+#upload-error:not(:empty){margin:12px 0}
+.upload-actions{display:flex;gap:10px;margin-top:22px}
+#upload-dialog .upload-actions button{width:auto;flex:1;font-size:12px;padding:12px 9px;min-height:46px}
+.secondary{background:#fff;border:1px solid var(--line);border-radius:9px;color:#526d60}
+.secondary:hover{background:#f2f6f3}
+.document-toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);background:var(--green);color:white;padding:14px 20px;border-radius:10px;max-width:calc(100% - 32px);width:max-content;font-size:13px;line-height:1.6;z-index:5}
+@media(max-width:360px){#upload-dialog{padding:20px}.upload-actions{flex-direction:column}.document-actions{flex-direction:column}}
+
+/* User confirmation extends the existing document cards and modal styling. */
+.document-verification-note{font-size:11px;line-height:1.6;color:var(--muted);margin:-2px 0 12px}
+.document-actions .verify-document{flex-basis:100%;justify-content:center;background:#f2f6f3;color:var(--green)}
+#next-action-button{width:auto;margin-top:15px;font-size:12px}
+#next-action-note{font-size:11px;line-height:1.7;margin-top:10px}
+#passport-dialog{max-width:580px;max-height:calc(100dvh - 32px);overflow-y:auto;padding:26px}
+#passport-description{font-size:13px;line-height:1.7;margin:13px 0}
+#passport-dialog .passport-warning{font-size:11px;line-height:1.7;color:#778378;background:#f4f7f4;padding:11px 13px;border-radius:8px;margin:12px 0 18px}
+#passport-form{margin-top:0}
+.passport-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.passport-field{min-width:0}
+.passport-field label{font-size:12px;line-height:1.5;margin:0 0 7px}
+.passport-field input{display:block;width:100%;min-width:0;height:46px;border:1px solid #dce4df;border-radius:9px;padding:10px 12px;background:#fcfdfc;color:#243d33;font:inherit;font-size:14px}
+.passport-field input:focus-visible{outline:3px solid #77ab95;outline-offset:2px}
+.passport-field input[aria-invalid="true"]{border-color:#a85a50}
+.field-error{display:block;color:#9a382f;font-size:11px;line-height:1.5;margin-top:5px}
+.field-error:empty{display:none}
+#passport-error{color:#9a382f;font-size:12px;line-height:1.6;margin:12px 0 0}
+#passport-error:empty{display:none}
+.passport-actions{display:flex;gap:10px;margin-top:24px}
+#passport-dialog .passport-actions button{width:auto;flex:1;font-size:12px;min-height:46px;padding:12px}
+#passport-details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:16px;row-gap:14px;font-size:13px;line-height:1.6;margin:20px 0}
+#passport-details dt{color:var(--muted)}
+#passport-details dd{margin:0;overflow-wrap:anywhere}
+@media(max-width:480px){#passport-dialog{padding:22px}.passport-fields{grid-template-columns:1fr;gap:13px}.passport-field input{font-size:16px}.passport-actions{flex-wrap:wrap}#passport-dialog .passport-actions button{min-width:120px}#passport-details{font-size:12px;column-gap:10px}}
+
+#passport-ocr{margin:0 0 18px}#passport-ocr button{width:auto;font-size:12px}#passport-ocr-note{font-size:11px;line-height:1.7;margin:9px 0;color:var(--muted)}
+
+/* Procedure deadlines reuse the existing spacing, palette and form styles. */
+.deadline-section{margin-top:26px}.deadline-intro,#deadline-message{font-size:12px;color:var(--muted);line-height:1.7;margin:12px 0}
+#deadline-inputs{background:white;border:1px solid var(--line);border-radius:13px;padding:18px;margin:16px 0}#deadline-inputs summary{cursor:pointer;font-size:13px;color:var(--green)}
+#deadline-form{margin-top:20px}#deadline-save{margin-top:16px;width:auto}
+.deadline-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.deadline-card{background:white;border:1px solid var(--line);border-radius:13px;padding:20px;min-width:0}.deadline-card h3{font-size:14px;margin:0 0 12px}.deadline-card p{font-size:12px;line-height:1.7;margin:8px 0;color:var(--muted)}.deadline-card strong{font-weight:600;color:var(--green)}.deadline-card .add-document{margin-top:12px}.deadline-card[data-status="overdue"]{border-color:#a85a50}.medical-heading{font-size:16px;margin:24px 0 14px}
+#deadline-dialog{max-width:560px;max-height:calc(100dvh - 32px);overflow:auto}#deadline-detail-body p,#deadline-detail-body li{font-size:13px;line-height:1.7}#deadline-detail-body a{text-decoration:underline;overflow-wrap:anywhere}#deadline-detail-body ul{padding-left:20px}
+@media(max-width:600px){.deadline-grid{grid-template-columns:1fr}}
+
+#medical-inputs{border:1px solid var(--line);border-radius:9px;padding:16px;margin:20px 0}#medical-inputs legend{font-size:14px}#medical-confirmed{width:auto;min-height:0} .deadline-card h3{overflow-wrap:anywhere}
+
+#medical-files-dialog{max-width:560px;max-height:calc(100dvh - 32px);overflow-y:auto}
+.medical-file{border-bottom:1px solid var(--line);padding:18px 0;min-width:0}
+.medical-file strong{display:block;font-size:13px;overflow-wrap:anywhere}
+.medical-file small{display:block;font-size:12px;color:var(--muted);margin:8px 0}
+.medical-file .document-actions{margin:12px 0}.medical-file button{width:auto}
+#medical-files-close{margin-top:20px}#medical-type-field{margin-bottom:18px}
+
+.medical-count{font-size:13px;color:var(--muted);margin-bottom:18px}.medical-file h3{font-size:14px;line-height:1.5;margin:0}.medical-file small{overflow-wrap:anywhere}.medical-dates{margin-top:12px;font-size:12px}.medical-date-form{margin-top:10px}.medical-date-form input{display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;font:inherit}.medical-dates summary:focus-visible{outline:3px solid #77ab95;outline-offset:3px}
+
+/* Medical slot colors are scoped to this dialog; other document cards stay unchanged. */
+.medical-slot--hiv{--slot-bg:#EAF7FB;--slot-border:#7CC6D8;--slot-accent:#3E8FA3;--slot-filled:#DDF1F6;--slot-ink:#286575}
+.medical-slot--infection{--slot-bg:#FDEEEE;--slot-border:#D98A8A;--slot-accent:#B85C5C;--slot-filled:#F9E2E2;--slot-ink:#864040}
+.medical-slot--narcology{--slot-bg:#EEF7EF;--slot-border:#7FB68A;--slot-accent:#4F8A5B;--slot-filled:#E1F0E3;--slot-ink:#35613E}
+#medical-files-list .medical-file{background:var(--slot-bg);border:1px solid var(--slot-border);border-radius:11px;padding:16px;margin-top:14px}
+#medical-files-list .medical-slot--uploaded{background:var(--slot-filled);box-shadow:inset 4px 0 0 var(--slot-accent)}
+.medical-slot-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;color:var(--slot-ink);margin-bottom:10px;line-height:1.5}
+.medical-slot-badge::before{content:'';width:8px;height:8px;flex-shrink:0;border-radius:50%;background:var(--slot-accent)}
+.medical-slot--uploaded .medical-slot-badge::before{content:'✓';background:var(--slot-accent);color:white;width:16px;height:16px;font-size:11px;text-align:center;line-height:16px}
+#medical-files-list .medical-file h3{color:var(--slot-ink)}
+#medical-files-list .medical-file .add-document{border-color:var(--slot-border);color:var(--slot-ink);background:#ffffffb3}
+#medical-files-list .medical-file .add-document:hover{background:white;border-color:var(--slot-accent)}
+#medical-files-list .medical-file :is(button,a,input,summary):focus-visible{outline:3px solid var(--slot-accent);outline-offset:3px}
+@media(max-width:480px){#medical-files-dialog{padding:20px}#medical-files-list .medical-file{padding:14px}}
+
+.student-action{margin-top:16px}.student-action h3{font-size:14px;margin:0 0 6px}.student-action .add-document{margin-top:9px}#fallback-value{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;font:inherit}#fallback-form{margin-top:16px}#fallback-error{color:#9a382f}#student-status{font-size:13px;margin:12px 0}
+
+/* Visa confirmation reuses the existing passport form spacing and controls. */
+#visa-dialog{max-width:580px;max-height:calc(100dvh - 32px);overflow-y:auto;padding:26px}
+#visa-dialog .visa-description,#visa-ocr-note{font-size:13px;line-height:1.7;margin:13px 0}
+#visa-dialog .passport-actions button{width:auto;flex:1;min-height:46px;font-size:12px}
+#visa-additional{margin-top:18px}#visa-additional summary{cursor:pointer;margin-bottom:14px}
+#visa-error{font-size:13px;color:#a63d3d}#visa-dialog .visa-field-note{font-size:11px;line-height:1.6;margin-top:5px}
+#visa-dialog select{width:100%;min-width:0}#visa-dialog input{min-width:0}
+@media(max-width:480px){#visa-dialog{padding:22px}#visa-dialog input,#visa-dialog select{font-size:16px}}
+
+#visa-recognize{min-height:44px;padding:10px 14px;font-size:12px}
